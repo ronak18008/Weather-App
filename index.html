@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <h1>Weather App</h1>
+      <div class="controls">
+        <button id="geoBtn" title="Use your location">📍 Use my location</button>
+        <label class="theme-switch">
+          <input type="checkbox" id="themeToggle" />
+          <span>Dark</span>
+        </label>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="search">
+        <input id="cityInput" placeholder="Enter city name..." aria-label="City name">
+        <button id="searchBtn">Search</button>
+      </section>
+
+      <div id="message" class="message"></div>
+
+      <section id="today" class="card today hidden">
+        <!-- Today's weather inserted here -->
+      </section>
+
+      <section id="forecast" class="card forecast hidden">
+        <h2>5-Day Forecast</h2>
+        <div id="forecastCards" class="forecast-cards"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <small>Built with HTML/CSS/JS on 02/12/2025</small>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
